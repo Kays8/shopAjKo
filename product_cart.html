@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shopping Cart Example</title>
+  </style>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="products">
+    <div class="product">
+      <img src="img-1.png" alt="Product 1 image" width="80px" height="80px">  <h3>Product 1 - $10</h3>
+     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, architecto?</p>
+      <button class="add-to-cart" data-product-id="1" data-price="10">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="img-1.png" alt="Product 2 image"width="80px" height="80px">  <h3>Product 2 - $20</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, architecto?</p>
+      <button class="add-to-cart" data-product-id="2" data-price="20">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="img-1.png" alt="Product 3 image"width="80px" height="80px">  <h3>Product 3 - $30</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, architecto?</p>
+      <button class="add-to-cart" data-product-id="3" data-price="30">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="img-1.png" alt="Product 4 image"width="80px" height="80px">  <h3>Product 4 - $40</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, architecto?</p>
+      <button class="add-to-cart" data-product-id="4" data-price="40">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="img-1.png" alt="Product 5 image"width="80px" height="80px">  <h3>Product 5 - $50</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, architecto?</p>
+      <button class="add-to-cart" data-product-id="5" data-price="40">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="img-1.png" alt="Product 6 image"width="80px" height="80px">  <h3>Product 6 - $60</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, architecto?</p>
+      <button class="add-to-cart" data-product-id="6" data-price="40">Add to Cart</button>
+    </div>
+
+   <button id="generate-pdf" disabled>Generate PDF</button>
+    <div id="cart">
+        
+        <h2>Cart</h2>
+      <p> <img src="add-to-cart.png" alt="add-to-cart" width="30px" height="30px">   No items in cart.</p>
+    </div>
+  </div>
+
+
+  <script src="cart.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</body>
+</html>

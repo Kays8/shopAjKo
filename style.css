@@ -1,0 +1,93 @@
+/* Container for products */
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: 50px; /* Add margin to create space between products and cart */
+  width: calc(100% - 320px); /* Adjust width to fit products and cart side by side */
+}
+
+/* Individual product */
+.product {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+  width: calc(50% - 30px); /* Adjust width to fit two products per row */
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.product h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+.product p {
+  margin-bottom: 10px;
+}
+
+/* Add to cart button */
+.add-to-cart {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  background-color: #0056b3;
+}
+
+/* Cart section */
+#cart {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  /* Add new styles for positioning */
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#cart p {
+    padding-bottom: 5px;
+}
+
+#cart h2 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 1.5em;
+}
+
+.cart-item {
+  margin-bottom: 10px;
+}
+
+.cart-total {
+  font-weight: bold;
+}
+
+/* Add this CSS to your existing style.css file */
+#cart button.delete-product {
+  background-color: #ff3333;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#cart button.delete-product:hover {
+  background-color: #cc0000;
+}
